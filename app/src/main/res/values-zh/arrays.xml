@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="more_tools">
+		<item>转义</item>
+        <item>反转义</item>
+		<item>中文转Unicode</item>
+		<item>Unicode转中文</item>
+    </string-array>
+	
+	<string-array name="more_tools_key">
+		<item>escape</item>
+        <item>unescape</item>
+		<item>strTounicode</item>
+		<item>unicodeToStr</item>
+    </string-array>
+	
+</resources>

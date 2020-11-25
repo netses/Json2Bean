@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="more_tools">
+		<item>escape</item>
+        <item>Unescape</item>
+		<item>Chinese To Unicode</item>
+		<item>Unicode To Chinese</item>
+    </string-array>
+	
+	<string-array name="more_tools_key">
+		<item>escape</item>
+        <item>unescape</item>
+		<item>strTounicode</item>
+		<item>unicodeToStr</item>
+    </string-array>
+	
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    <style name="AppTheme" parent="Base.AppTheme">
+		<item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="AppTheme.Night" parent="Base.AppTheme.Night">
+		<item name="android:forceDarkAllowed">false</item>
+    </style>
+    <style name="AppTheme.DarkActionBar" parent="Base.AppTheme.DarkActionBar">
+		<item name="android:forceDarkAllowed">false</item>
+    </style>-->
+    
+</resources>

@@ -1,0 +1,9 @@
+include ':app'
+
+file('library').listFiles().each {
+    if (it.isDirectory()) {
+        include ":library:${it.name}"
+    }
+}
+
+rootProject.name = "Json2Bean"

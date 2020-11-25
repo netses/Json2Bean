@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:id="@+id/tab_main_config">
+
+	<com.s1243808733.java2beans.ui.widget.CustomFastScrollScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:fillViewport="true"
+		android:id="@+id/scrollview">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:paddingLeft="@dimen/activity_horizontal_margin"
+			android:paddingRight="@dimen/activity_horizontal_margin"
+			android:paddingBottom="@dimen/activity_vertical_margin">
+
+			<com.s1243808733.java2beans.ui.widget.CustomButton
+				style="@style/MainButtonStyle"
+				android:text="@string/btn_reset"
+                app:click="onResetClick"
+				android:layout_marginTop="10dp"/>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_field_modifier"/>
+
+				<com.s1243808733.java2beans.ui.widget.SPRadioGroup
+					style="@style/MainRadioGroupStyle"
+					android:id="@+id/rg_field_modifier"
+					app:sp="Json2BeanConfig_FieldModifier"
+					app:defCheck="@+id/rb_private">
+
+					<RadioButton
+						style="@style/MainRadioButtonStyle"
+						android:id="@+id/rb_private"
+						android:text="@string/rg_field_modifier_private"
+						android:layout_marginLeft="0dp"/>
+
+					<RadioButton
+						style="@style/MainRadioButtonStyle"
+						android:id="@+id/rb_public"
+						android:text="@string/rg_field_modifier_public"/>
+
+					<RadioButton
+						style="@style/MainRadioButtonStyle"
+						android:id="@+id/rb_protected"
+						android:text="@string/rg_field_modifier_protected"/>
+
+				</com.s1243808733.java2beans.ui.widget.SPRadioGroup>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_method"/>
+
+				<com.s1243808733.java2beans.ui.widget.AutoNewLineLayout
+					style="@style/MainAutoNewLayoutStyle">
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/use_setter"
+						android:text="@string/cb_setter"
+						app:key="use_setter"
+						app:value="true"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/use_getter"
+						android:text="@string/cb_getter"
+						app:key="use_getter"
+						app:value="true"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/use_return_this"
+						android:text="@string/cb_use_return_this"
+						app:key="use_return_this"
+						app:value="true"/>
+
+				</com.s1243808733.java2beans.ui.widget.AutoNewLineLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_other"/>
+
+				<com.s1243808733.java2beans.ui.widget.AutoNewLineLayout
+					style="@style/MainAutoNewLayoutStyle">
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/use_primitive_types"
+						android:text="@string/cb_use_primitive_types"
+						app:key="use_primitive_types"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/use_long_integers"
+						android:text="@string/cb_use_long_integers"
+						app:key="use_long_integers"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/initialize_collections"
+						android:text="@string/cb_initialize_collections"
+						app:key="initialize_collections"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/accept_null_value"
+						android:text="@string/cb_accept_null_value"
+						app:key="accept_null_value"/>
+
+				</com.s1243808733.java2beans.ui.widget.AutoNewLineLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_implements"/>
+
+				<com.s1243808733.java2beans.ui.widget.AutoNewLineLayout
+					style="@style/MainAutoNewLayoutStyle">
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/make_classes_parcelable"
+						android:text="@string/cb_make_classes_parcelable"
+						app:key="make_classes_parcelable"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/make_classes_serializable"
+						android:text="@string/cb_make_classes_serializable"
+						app:key="make_classes_serializable"/>
+
+				</com.s1243808733.java2beans.ui.widget.AutoNewLineLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_override"/>
+
+				<com.s1243808733.java2beans.ui.widget.AutoNewLineLayout
+					style="@style/MainAutoNewLayoutStyle">
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/override_equals"
+						android:text="@string/cb_override_equals"
+						app:key="override_equals"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/override_hashCode"
+						android:text="@string/cb_override_hashCode"
+						app:key="override_hashCode"/>
+
+					<com.s1243808733.java2beans.ui.widget.SPCheckBox
+						style="@style/MainCheckBoxStyle"
+						android:id="@+id/override_toString"
+						android:text="@string/cb_override_toString"
+						app:key="override_toString"/>
+
+				</com.s1243808733.java2beans.ui.widget.AutoNewLineLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				style="@style/SectionStyle">
+
+				<TextView
+					style="@style/SectionTitleStyle"
+					android:text="@string/section_annotation"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content">
+
+					<com.s1243808733.java2beans.ui.widget.AutoNewLineLayout
+						style="@style/MainAutoNewLayoutStyle">
+
+						<com.s1243808733.java2beans.ui.widget.SPCheckBox
+							style="@style/MainCheckBoxStyle"
+							android:id="@+id/annotation_gson"
+							android:text="@string/cb_annotation_gson"
+							app:key="annotation_gson"
+							app:value="true"/>
+
+						<com.s1243808733.java2beans.ui.widget.SPCheckBox
+							style="@style/MainCheckBoxStyle"
+							android:id="@+id/annotation_fastjson"
+							android:text="@string/cb_annotation_fastjson"
+							app:key="annotation_fastjson"/>
+
+					</com.s1243808733.java2beans.ui.widget.AutoNewLineLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</com.s1243808733.java2beans.ui.widget.CustomFastScrollScrollView>
+
+</RelativeLayout>
+

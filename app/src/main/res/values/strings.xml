@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Json2Bean</string>
+    
+	<string name="copy">@android:string/copy</string>
+    <string name="yes">@android:string/yes</string>
+    <string name="ok">@android:string/ok</string>
+    <string name="cancel">@android:string/cancel</string>
+    <string name="paste">@android:string/paste</string>
+
+    <string name="about_app">About this app</string>
+    
+	<string name="output">Output</string>
+    <string name="clear">Clear</string>
+	<string name="generate">Generate</string>
+    <string name="settings">Settings</string>
+    <string name="unknown">unknown</string>
+    <string name="close">close</string>
+    <string name="exit">Exit</string>
+	<string name="restart">Restart</string>
+    
+    <string name="tab_basic">Basic</string>
+    <string name="tab_config">Configuration</string>
+    <string name="tab_output">Output</string>
+
+    <string name="hint_pkg">Package name: (optional)</string>
+    <string name="hint_cls">Class name:</string>
+    <string name="hint_json">JSON：</string>
+
+    <string name="btn_compress">Compression</string>
+    <string name="btn_format">Formatting</string>
+    <string name="btn_copy">@string/copy</string>
+    <string name="btn_clear">@string/clear</string>
+    <string name="btn_paste">Paste</string>
+    <string name="btn_load_from_url">Load from URL</string>
+	<string name="btn_more">More</string>
+    <string name="btn_reset">Reset</string>
+    <string name="btn_out_whole">Export to Java file</string>
+    <string name="btn_out_splist">Split export to directory</string>
+    <string name="btn_out_zip">Export to Zip file</string>
+
+    <string name="hint_input_url">Support http(s)://,file:// protocols</string>
+    <string name="hint_output_dir">Export file path:</string>
+    <string name="hint_out_dir">Export path:</string>
+    <string name="hint_result">Generate result:</string>
+	<string name="hint_filename">fileName:</string>
+	
+    <string name="section_field_modifier">Field modifier:</string>
+    <string name="section_method">Method:</string>
+    <string name="section_other">Other:</string>
+    <string name="section_implements">Implements:</string>
+    <string name="section_override">Override:</string>
+    <string name="section_annotation">Annotation style:</string>
+
+    <string name="rg_field_modifier_private">private</string>
+	<string name="rg_field_modifier_public">public</string>
+	<string name="rg_field_modifier_protected">protected</string>
+
+    <string name="cb_setter">setter</string>
+    <string name="cb_getter">getter</string>
+    <string name="cb_use_return_this">return this</string>
+    <string name="cb_use_primitive_types">Use primitive type</string>
+    <string name="cb_use_long_integers">Use long integers</string>
+    <string name="cb_initialize_collections">Initialize collection</string>
+    <string name="cb_accept_null_value">Accept null value</string>
+    <string name="cb_make_classes_parcelable">Parcelable</string>
+    <string name="cb_make_classes_serializable">Serializable</string>
+    <string name="cb_override_equals">equals</string>
+    <string name="cb_override_hashCode">hashCode</string>
+    <string name="cb_override_toString">toString</string>
+    <string name="cb_annotation_gson">Gson</string>
+    <string name="cb_annotation_fastjson">FastJson</string>
+
+    <string name="message_please_input_json">Please enter JSON</string>
+    <string name="message_classname_notset">Please set the class name</string>
+    <string name="message_keyless_array_exception">Keyless arrays are not supported</string>
+    <string name="message_json_parse_exception">JSON parsing failed</string>
+    <string name="message_same_foldername_exists">The same folder name exists in this directory</string>
+    <string name="message_same_filename_exists">The same file name exists in this directory</string>
+    <string name="message_file_not_exists">file not exist</string>
+    <string name="message_not_write_storage_permission">No read/write phone storage permission</string>
+    <string name="message_format_exported">Exported to %s</string>
+    <string name="message_not_generate">Not generate</string>
+
+    <string name="message_copied_to_clipboard">Copied to clipboard</string>
+    <string name="message_press_again_to_exit">Press again to exit</string>
+    <string name="message_format_generation_time_consuming">Time spent: %s</string>
+
+    <string name="crash_title">App crash</string>
+
+	<string name="time_unit_ms">ms</string>
+	<string name="time_unit_s">s</string>
+	<string name="time_unit_m">m</string>
+    <string name="time_unit_h">h</string>
+    <string name="time_unit_d">d</string>
+
+	<string name="intent_choose_title">Select application</string>
+    
+    <string name="app_introduction">本工具可以快捷将Json字符串转换为Java实体类，便于利用其它Json库进行反序列化等</string>
+    
+</resources>

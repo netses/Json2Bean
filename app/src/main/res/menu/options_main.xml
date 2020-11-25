@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   
+        
+    <item
+        android:id="@+id/menuItemGenerate"
+        android:title="@string/generate"
+        android:showAsAction="ifRoom|withText"/>
+	<item
+        android:id="@+id/menuItemAbout"
+        android:title="@string/about_app"/>
+	
+	<item
+        android:id="@+id/menuItemFinish"
+        android:title="@string/exit"/>
+	
+</menu>

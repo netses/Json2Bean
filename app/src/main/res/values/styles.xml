@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@android:style/Theme.Material.Light.NoActionBar">
+    </style>
+    
+    <style name="AppTheme.DayNight" parent="@android:style/Theme.Material.Light"/>
+
+    <style name="Base.AppTheme" parent="AppTheme.DayNight">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/statusBarColor</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:colorEdgeEffect">?android:colorAccent</item>
+    </style>    
+
+    <style name="AppTheme" parent="Base.AppTheme">
+	</style>
+    
+    <style name="MainAutoNewLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="horizontalSpace">@dimen/anll_horizontal_space</item>
+        <item name="vertivalSpace">@dimen/anll_vertival_space</item>
+    </style>
+
+    <style name="MainCheckBoxStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="sp">Json2BeanConfig</item>
+    </style>
+
+    <style name="MainRadioGroupStyle">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MainRadioButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+
+	<style name="MainButtonStyle">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+	</style>
+	
+    <style name="SectionStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="SectionTitleStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+</resources>
